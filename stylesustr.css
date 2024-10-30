@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #b3b3b3;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background: #333;
+    border-radius: 30px;
+}
+
+.tabs li {
+    flex: 1;
+}
+
+.tabs a {
+    padding: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.tabs a:hover {
+    background: #575757;
+}
+
+.content {
+    padding: 20px;
+    display: none; /* Скрыть контент по умолчанию */
+    animation: fadeIn 0.5s; /* Анимация появления */
+}
+
+.active {
+    display: block; /* Показать активный контент */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
